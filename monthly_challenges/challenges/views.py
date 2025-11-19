@@ -14,7 +14,7 @@ monthly_challenges = {
     'september': 'Learn sculpting for at least 20 minutes every day!',
     'october': 'Learn cooking for at least 20 minutes every day!',
     'november': 'Go running for at least 20 minutes every day!',
-    'december': 'Happy birthday!',
+    'december': None
 }
 
 # Create your views here.
