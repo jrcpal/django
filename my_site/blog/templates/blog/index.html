@@ -8,16 +8,9 @@
 {% endblock %}
 
 {% block content %}
-    <header id='main-navigation'>
-        <h1><a href=""> Jess's Blog </a></h1>
-        <nav>
-            <a href=""> All Posts </a>
-        </nav>
-    </header>
-
     <section id='welcome'>
         <header>
-            <img src='' alt='Jess - The Author of this Blog' />
+            <img src='{% static 'blog/images/IMG_8439.jpg' %}' alt='Jess - The Author of this Blog' />
             <h2> Jess's Blog</h2>
         </header>
         <p>Hi, I am Jess and I like to study programming languages and frameworks</p>
@@ -27,17 +20,7 @@
         <h2>My latest thoughts</h2>
 
         <ul>
-            <li>
-                <article class='post'>
-                    <a href=''>
-                        <img src='' alt='Hiking' />
-                        <div class='post__content'>
-                            <h3>Hiking</h3>
-                            <p>It's just like a walking simulator</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
+            {% include 'blog/includes/post.html' %}
         </ul>
     </section>
 
